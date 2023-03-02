@@ -119,7 +119,14 @@ sudo proxychains gem install seccomp-tools
 sudo pacman -S patchelf
 ```
 
-
+######禁用键盘
+```shell
+sudo pacman -S --needed xorg-xinput
+#关闭
+xinput disable "AT Translated Set 2 keyboard"
+#开启
+xinput enable "AT Translated Set 2 keyboard"
+```
 
 ###### 搭建arm交叉编译环境
 
